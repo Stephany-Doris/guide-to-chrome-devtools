@@ -1,0 +1,99 @@
+body {
+  background-color: #f9f9f9;
+  color: #454545;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.root-demo {
+  border-top: 3px solid #3084fe !important;
+  width: 70%;
+  background-color: #fff;
+  margin: 4rem auto 0;
+  padding: 0 2rem 5rem;
+  min-height: calc(100vh - 5rem);
+  border: 1px solid #bbb;
+}
+
+.header {
+  height: 80px;
+  background-color: #3084fe;
+}
+
+li {
+    margin-right: 2rem;
+}
+
+.demo-items ul {
+    color: #454545;
+    display: block;
+    line-height: 2;
+    list-style: circle;
+}
+
+code {
+    background-color: #f5f2f0;
+    padding: 12px;
+}
+
+dl {
+    margin-left: 16px;
+    background-color: #eee;
+    padding: 12px;
+}
+
+dt {
+    font-weight: 700;
+}
+
+li ul {
+    padding-top: 0;
+}
+
+li p {
+    margin: 0 0 0 20px;
+    color: #5b5b5b;
+}
+
+.demo-items {
+    padding-bottom: 4rem;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    margin: auto;
+    font-size: 1.2rem;
+    padding: 23px 0 0 30px;
+}
+
+.header ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.demo-items img {
+    width: 70%;
+    box-shadow: 10px 10px 30px #eee;
+}
+
+.panel-demo img {
+    width: 30px;
+}
+
+.event button {
+    height: 38px;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    background: transparent;
+    cursor: pointer;
+}
+
+.event button:active {
+    background: #3084fe;
+    color: white;
+}
+
+h1 img {
+    height: 30px;
+}

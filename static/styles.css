@@ -1,0 +1,169 @@
+body {
+  background-color: #f9f9f9;
+  color: #454545;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.root {
+  width: 70%;
+  background-color: #fff;
+  margin: auto;
+  padding: 0 02rem 5rem;
+  min-height: calc(100vh - 5rem);
+}
+
+p {
+  color: #606060;
+  font-size: 20px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 12px;
+}
+
+h1.title {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+h3 {
+  color: #454545;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+ul {
+  list-style: decimal;
+}
+
+li {
+  font-size: 18px;
+}
+
+div#app {
+  line-height: 2;
+  margin: 0 3rem;
+}
+
+.panels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  column-gap: 2rem;
+}
+
+.panels div {
+  min-height: 100px;
+  background-color: #e8f0fe;
+  padding: 12px;
+  color: #3084fe;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin: 1rem 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.panels ul {
+  list-style: circle;
+  color: initial;
+}
+
+.panels div:hover {
+  box-shadow: 10px 10px 30px #eee;
+  transform: scale(1.1);
+}
+
+.linked a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.note {
+  background: #eee;
+  border-left: 3px solid #f8ce5e;
+  margin: 25px 0;
+  padding: 24px 32px;
+}
+
+video {
+  width: 35rem;
+  height: 25rem;
+}
+
+.dom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+}
+
+.dom img {
+  width: 90%;
+}
+
+.header {
+  height: 80px;
+  background-color: #3084fe;
+  width: inherit;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  margin: auto;
+  font-size: 1.2rem;
+  padding: 23px 0 0 30px;
+}
+
+.header ul a {
+  color: white;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
+/* screens bigger than laptop */
+@media screen and (min-width: 1024px) {
+  video {
+    width: 50rem;
+    height: 40rem;
+  }
+
+  h1.title {
+    font-size: 3rem;
+  }
+}
+
+/* mobile devices */
+@media screen and (max-width: 768px) {
+  div#app {
+    margin: 0;
+  }
+
+  video {
+    width: -webkit-fill-available;
+    height: 12rem;
+    object-fit: contain;
+  }
+
+  .dom img {
+    width: 200px;
+  }
+
+  .panels {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .demo-items img {
+    width: 250px;
+  }
+
+  li p {
+    word-break: break-word;
+  }
+}

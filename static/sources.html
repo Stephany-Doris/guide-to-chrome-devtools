@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/demo.css" type="text/css" />
+    <title>Chrome Devtools</title>
+  </head>
+  <body>
+    <div class="header">
+      <ul>
+        <a href="/"><li>Home</li></a>
+        <a href="elements"><li>Elements</li></a>
+        <a href="sources"><li>Sources</li></a>
+        <a href="network"><li>Network</li></a>
+      </ul>
+    </div>
+    <div id="root" class="root-demo">
+      <div id="app">
+        <h1 class="panel-demo">
+          <img src="./public/devtools-circle-128.png" alt="devtools logo" />
+          Sources panel
+        </h1>
+        <div class="demo-items">
+          <img src="/public/sources-tab.png" alt="sources panel" />
+          <ul>
+            <li>
+              Workspaces
+              <p>Use devtools as an IDE</p>
+            </li>
+            <li>
+              Overrides
+              <p>Persist changes through page reloads</p>
+            </li>
+            <li>
+              Breakpoints
+              <p>Used in debugging</p>
+            </li>
+            <li>Call stack: step over, step into, step out</li>
+            <li>
+              Watch
+              <p>Watch the value of a variable through execution</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

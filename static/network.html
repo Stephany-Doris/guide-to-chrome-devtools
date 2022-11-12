@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/demo.css" type="text/css" />
+    <title>Chrome Devtools</title>
+  </head>
+  <body>
+    <div class="header">
+      <ul>
+        <a href="/"><li>Home</li></a>
+        <a href="elements"><li>Elements</li></a>
+        <a href="sources"><li>Sources</li></a>
+        <a href="network"><li>Network</li></a>
+      </ul>
+    </div>
+    <div id="root" class="root-demo">
+      <div id="app">
+        <h1>
+          <img src="./public/devtools-circle-128.png" alt="devtools logo" />
+          Network panel
+        </h1>
+        <div class="demo-items">
+          <img src="/public/network.png" alt="network panel" />
+          <ul>
+            <li>Simulate Network conditions</li>
+            <li>
+              The Network waterfall
+              <dl>
+                <dt>◻️ Queueing</dt>
+                <dd>There are higher priority requests.</dd>
+                <dd>
+                  There are already six TCP connections open for this origin,
+                  which is the limit. Applies to HTTP/1.0 and HTTP/1.1 only.
+                </dd>
+                <dd>
+                  The browser is briefly allocating space in the disk cache
+                </dd>
+
+                <dt>⬜️ Stalled</dt>
+                <dd>The request is stuck Queueing</dd>
+                <dt>🟩 DNS Lookup</dt>
+                <dd>Resolving an IP address</dd>
+                <dt>🟧 Initial Connection</dt>
+                <dd>TCP handshakes or establishing SSL</dd>
+                <dt>🟧 Service Worker Startup</dt>
+                <dd>Starting up a Service Worker</dd>
+                <dt>🟪 Service Worker respondsWith</dt>
+                <dd>Service Worker sending data to browser</dd>
+                <dt>🟩 Waiting (TTFB)</dt>
+                <dd>Waiting for the first byte from the server</dd>
+                <dt>🟦 Content Download</dt>
+                <dd>Browser is receiving a response from a server</dd>
+              </dl>
+            </li>
+            <li>Request types</li>
+            <li>Nested requests</li>
+            <li>Priority</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/styles.css" type="text/css" />
+    <title>Chrome Devtools</title>
+  </head>
+  <body>
+    <div class="header">
+      <ul>
+        <a href="/"><li>Home</li></a>
+        <a href="elements"><li>Elements</li></a>
+        <a href="sources"><li>Sources</li></a>
+        <a href="network"><li>Network</li></a>
+      </ul>
+    </div>
+    <div id="root" class="root">
+      <video autoplay loop muted>
+        <source src="./public/devtools-animation.mp4" type="video/mp4" />
+        <p>
+          Your browser doesn't support HTML video. Here is a
+          <a href="./devtools-animation.mp4">link to the video</a> instead.
+        </p>
+      </video>
+
+      <div id="app">
+        <h1 class="title">Chrome Devtools as an IDE</h1>
+
+        <div>
+          <h3>What we'll cover today</h3>
+          <ul>
+            <li>What is chrome devtools</li>
+            <li>What is the DOM</li>
+            <li>Overview of different panels</li>
+            <li>
+              Chrome as an IDE. This will focus on three panels: Elements,
+              sources and network.
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>What is chrome dev tools</h3>
+          <p>
+            <dl><dt>Why learn DevTools?</dt>
+            <dd>Level up your dev skills Find bugs quickly</dd>
+                <dd>Figure out how other websites work</dd>
+            </dl>
+          </p>
+        </div>
+
+        <h3>The DOM</h3>
+          <p>When you use a web browser to request a page, the server returns HTML. 
+              The browser parses the HTML and creates a tree of objects as shown below:</p>
+          <p>This tree of objects, or nodes, representing the page's content is called the <strong>DOM</strong></p>
+        <div class="dom">
+          <img src="./public/dom-tree.png" alt="dom-tree" />
+        </div>
+        <div class="note">
+          💡 Note: Chrome extensions often mess with the DevTools data, leading
+          to inaccurate reporting! If you're going to run any important audits,
+          make sure you have all of your extensions disabled **or** use an
+          Incognito tab!
+        </div>
+        <div>
+          <h3>Overview</h3>
+          <div class="panels">
+            <div class="linked">
+              <a href="/elements"><h4>Sources panel 📘</h4></a>
+              <ul>
+                <li>A full IDE</li>
+                <li>Step through debugger</li>
+                <li>Persist changes to disk</li>
+              </ul>
+            </div>
+            <div class="linked">
+              <a href="/elements"><h4>Elements panel 🧪</h4></a>
+              <ul>
+                <li>View HTML and CSS</li>
+                <li>Add/Edit html, css and attributes</li>
+                <li>Scroll into view</li>
+                <li>Search for node</li>
+                <li>Reorder DOM nodes</li>
+              </ul>
+            </div>
+            <div class="linked">
+              <a href="/elements"><h4>Network panel 🌐</h4></a>
+              <ul>
+                <li>View all files sent from server</li>
+                <li>Filter resources</li>
+                <li>Watch your site load in real time</li>
+                <li>Inspect request / response data</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Console panel 🎮</h4>
+              <ul>
+                <li>The friendly one!</li>
+                <li>JavaScript REPL(read–eval–print loop): is a simple interactive computer programming environment that takes single user inputs, 
+executes them, and returns the result to the user</li>
+                <li>Interact with the DOM</li>
+                <li>Used for logging</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Application panel 💼</h4>
+              <ul>
+                <li>Application storage</li>
+                <li>Check PWA features</li>
+                <li>Clear cache</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Performance panel ⚡️</h4>
+              <ul>
+                <li>The scary one!</li>
+                <li>Record CPU and Memory usage</li>
+                <li>Inspect threads</li>
+                <li>Spot page jank</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Lighthouse panel 🚢</h4>
+              <ul>
+                <li>Full website audit</li>
+                <li>Check Performance, SEO, Accessibility</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Memory panel 📫</h4>
+              <ul>
+                <li>Generate memory snapshots</li>
+                <li>Find and fix memory leaks</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Security panel 🔒</h4>
+              <ul>
+                <li>Check that requests use HTTPS</li>
+                <li>View certificates</li>
+                <li>View any TLS/SSL issues</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3>Additional Resources</h3>
+          <p>Command shortcuts</p>
+          <ul>
+            <a href="https://developer.chrome.com/docs/devtools/overview/"
+              ><li>Official Docs</li></a
+            >
+            <a
+              href="https://twitter.com/ChromeDevTools?s=20&t=hEljxWMJKv6rzVxCH5TVFg"
+              ><li>Twitter</li></a
+            >
+            <a href="https://web.dev/learn/"><li>Web.dev</li></a>
+            <a href="https://umaar.com/blog/"><li>Umaar Hansa Blog</li></a>
+            <a
+              href="https://drive.google.com/file/d/1gj-5jC2HgP04gw7Xnd_Xc3rygDp6AN2e/view"
+              ><li>Performance</li></a
+            >
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

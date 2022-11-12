@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/demo.css" type="text/css" />
+    <title>Chrome Devtools</title>
+  </head>
+  <body>
+    <div class="header">
+      <ul>
+        <a href="/"><li>Home</li></a>
+        <a href="elements"><li>Elements</li></a>
+        <a href="sources"><li>Sources</li></a>
+        <a href="network"><li>Network</li></a>
+      </ul>
+    </div>
+    <div id="root" class="root-demo">
+      <div id="app">
+        <h1>
+          <img src="./public/devtools-circle-128.png" alt="devtools logo" />
+          Elements panel
+        </h1>
+        <div class="demo-items">
+          <ul>
+            <li>Responsive toggle & Element Inspector</li>
+            <li>
+              Get reference by id or class
+              <div>
+                <p><code> document.getElementById("app")</code></p>
+                <p><code>document.getElementsByClassName("header")</code></p>
+              </div>
+            </li>
+            <li>
+              Edit html & css
+              <p>
+                Edit as html, edit node type, edit content, make css updates, add & edit attributes, hide
+                element, delete node and add breakpoint
+              </p>
+            </li>
+            <li>
+              Reference the currently-selected node with $0
+            </li>
+            <li>
+              CSS Specifishity
+              <p>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity"
+                  >Specificity</a
+                >
+                is the algorithm used by browsers to determine style precedence
+                in css. As viewed on the computed tab.
+              </p>
+              <img src="./public/specifishity.png" alt="specifishity chart" />
+            </li>
+            <li>
+              Event listeners
+              <div class="event">
+                <button type="button" onclick="addChild()">
+                  Adds child nodes
+                </button>
+                <ul id="event-list"></ul>
+              </div>
+            </li>
+            <li>Persist CSS changes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="/static/index.js"></script>
+  </body>
+</html>
