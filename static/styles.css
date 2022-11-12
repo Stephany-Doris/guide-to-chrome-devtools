@@ -130,7 +130,7 @@ video {
 /* screens bigger than laptop */
 @media screen and (min-width: 1024px) {
   video {
-    width: 50rem;
+    width: 65rem;
     height: 40rem;
   }
 
