@@ -10,6 +10,7 @@ This app requires Node.js which can be downloaded [here](https://nodejs.org/)
 
 ```bash
 git clone git@github.com:Stephany-Doris/guide-to-chrome-devtools.git
+cd guide-to-chrome-devtools
 yarn
 yarn start
 ```
